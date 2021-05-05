@@ -1,6 +1,7 @@
 # Local files to omit
 .DS_Store
 changelog.txt
+Readme.txt
 .history
 
 # Byte-compiled / optimized / DLL files
