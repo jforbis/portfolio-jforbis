@@ -213,7 +213,7 @@ h1, h2, h3, h4, h5, h6 {
 #hero {
   width: 100%;
   height: 100vh;
-  background: url("../img/jfimgs/pagebg.jpeg") top right;
+  background: url("../img/jfimgs/pagebg.jpeg") top center;
   background-size: cover;
 }
 
@@ -253,7 +253,7 @@ h1, h2, h3, h4, h5, h6 {
   color: #fff;
   padding-bottom: 4px;
   letter-spacing: 1px;
-  border-bottom: 3px solid #149ddd;
+  border-bottom: 3px solid #000000;
 }
 
 @media (min-width: 1024px) {
@@ -440,6 +440,11 @@ section {
 /*--------------------------------------------------------------
 # Resume
 --------------------------------------------------------------*/
+#resume-btn {
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
 .resume .resume-title {
   font-size: 26px;
   font-weight: 700;
@@ -498,9 +503,30 @@ section {
   border: 2px solid #1f5297;
 }
 
+.career-img {
+  max-height: 25px;
+  margin-right: 15px;
+}
+
+.career-link {
+  color:#17191D;
+}
+
 /*--------------------------------------------------------------
 # Portfolio
 --------------------------------------------------------------*/
+#comingsoon {
+  display: block;
+  max-height: 400px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 25px;
+}
+
+#port-gh {
+  height: 40px;
+}
+
 .portfolio .portfolio-item {
   margin-bottom: 30px;
 }
@@ -976,6 +1002,14 @@ section {
   background: #37b3ed;
 }
 
+#sendmail {
+  float: right;
+}
+
+#clearform {
+  float: left;
+}
+
 @-webkit-keyframes animate-loading {
   0% {
     transform: rotate(0deg);
@@ -1055,12 +1089,13 @@ section {
 }
 
 #footer .copyright {
-  text-align: center;
+  text-align: right;
+  font-size: 10px;
 }
 
 #footer .credits {
   padding-top: 5px;
-  text-align: center;
+  text-align: left;
   font-size: 13px;
   color: #eaebf0;
 }

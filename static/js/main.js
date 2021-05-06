@@ -254,3 +254,22 @@
   });
 
 })()
+
+// Setting variables for contact form
+function GetVariables() {
+  let name = d3.select("#name").node().value;
+  let email = d3.select("#email").node().value;
+  let subject = d3.select("#subject").node().value;
+  let body = d3.select("#message").node().value;
+  document.getElementById("sendmail").href="mailto:forbisjohn@gmail.com?subject=" + subject + "&body=Name:%20" + name + "%0d%0a" + "%0d%0a" + "E-mail:%20" + email + "%0d%0a" + "%0d%0a" + body + "";
+}
+
+GetVariables();
+
+// Clear Form
+function ClearForm() {
+  d3.select("#name").node().value = ''
+  d3.select("#email").node().value = ''
+  d3.select("#subject").node().value = ''
+  d3.select("#message").node().value = ''
+}

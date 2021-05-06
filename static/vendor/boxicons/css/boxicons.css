@@ -4749,13 +4749,13 @@
   .bxl-etsy:before {
     content: "\ee80";
   }
-  .bxl-facebook:before {
+  .bxl-github:before {
     content: "\ee81";
   }
-  .bxl-facebook-circle:before {
+  .bxl-github-circle:before {
     content: "\ee82";
   }
-  .bxl-facebook-square:before {
+  .bxl-github-square:before {
     content: "\ee83";
   }
   .bxl-figma:before {
