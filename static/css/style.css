@@ -401,7 +401,7 @@ section {
 }
 
 /*--------------------------------------------------------------
-# Akills
+# Skills
 --------------------------------------------------------------*/
 .skills .progress {
   height: 60px;
@@ -503,6 +503,10 @@ section {
   border: 2px solid #1f5297;
 }
 
+.edu-img {
+  max-height: 25px;
+  margin-right: 15px;
+}
 .career-img {
   max-height: 25px;
   margin-right: 15px;
@@ -516,11 +520,12 @@ section {
 # Portfolio
 --------------------------------------------------------------*/
 #comingsoon {
-  display: block;
+  display: flex;
   max-height: 400px;
   margin-left: auto;
   margin-right: auto;
   border-radius: 25px;
+  width: 70%;
 }
 
 #port-gh {
