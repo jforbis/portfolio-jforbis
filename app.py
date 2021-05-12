@@ -6,9 +6,9 @@ app = Flask(__name__)
 def home():
     return render_template("index.html")
 
-@app.route("/projects", methods=['GET'])
+@app.route("/make-that-bread", methods=['GET'])
 def proj():
-    return render_template("portfolio-details.html")
+    return render_template("stock-predictor.html")
 
 
 # @app.route("/projects", methods=['GET'])
