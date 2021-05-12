@@ -349,6 +349,10 @@ section {
   margin-bottom: 0;
 }
 
+.about-site {
+  font-size: 100%;
+}
+
 /*--------------------------------------------------------------
 # Facts
 --------------------------------------------------------------*/
@@ -585,6 +589,7 @@ section {
   transition: all ease-in-out 0.3s;
   z-index: 2;
   opacity: 0;
+  height: 176px;
 }
 
 .portfolio .portfolio-wrap .portfolio-links {
@@ -629,6 +634,13 @@ section {
   bottom: 0;
 }
 
+.portfolio-img {
+  height: 176px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
 /*--------------------------------------------------------------
 # Portfolio Details
 --------------------------------------------------------------*/
@@ -641,7 +653,6 @@ section {
 }
 
 .portfolio-details .portfolio-details-slider .swiper-pagination {
-  margin-top: 20px;
   position: relative;
 }
 
@@ -681,7 +692,7 @@ section {
 }
 
 .portfolio-details .portfolio-description {
-  padding-top: 30px;
+  padding-top: 12px;
 }
 
 .portfolio-details .portfolio-description h2 {
@@ -693,6 +704,10 @@ section {
 .portfolio-details .portfolio-description p {
   padding: 0;
 }
+
+/* .swiper-wrapper {
+  padding-bottom: 20px;
+} */
 
 /*--------------------------------------------------------------
 # Services

@@ -5,27 +5,26 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Portfolio Details - iPortfolio Bootstrap Template</title>
+  <title>Stock Price Predictor</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
   <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <link href="{{ url_for('static',filename='img/headshot.jpg') }}" rel="icon">
+  <link href="{{ url_for('static',filename='img/headshot.jpg') }}" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
 
   <!-- Vendor CSS Files -->
-  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-
+  <link href="{{ url_for('static',filename='vendor/aos/aos.css') }}" rel="stylesheet">
+  <link href="{{ url_for('static',filename='vendor/bootstrap/css/bootstrap.min.css') }}" rel="stylesheet">
+  <link href="{{ url_for('static',filename='vendor/bootstrap-icons/bootstrap-icons.css') }}" rel="stylesheet">
+  <link href="{{ url_for('static',filename='vendor/boxicons/css/boxicons.min.css') }}" rel="stylesheet">
+  <link href="{{ url_for('static',filename='vendor/glightbox/css/glightbox.min.css') }}" rel="stylesheet">
+  <link href="{{ url_for('static',filename='vendor/swiper/swiper-bundle.min.css') }}" rel="stylesheet">
   <!-- Template Main CSS File -->
-  <link href="assets/css/style.css" rel="stylesheet">
+  <link href="{{ url_for('static',filename='/css/style.css') }}" rel="stylesheet">
 
   <!-- =======================================================
   * Template Name: iPortfolio - v3.1.0
@@ -45,14 +44,13 @@
     <div class="d-flex flex-column">
 
       <div class="profile">
-        <img src="assets/img/profile-img.jpg" alt="" class="img-fluid rounded-circle">
-        <h1 class="text-light"><a href="index.html">Alex Smith</a></h1>
+        <img src="{{ url_for('static',filename='img/jfimgs/headshot.jpg') }}" alt="" class="img-fluid rounded-circle">
+        <h1 class="text-light"><a href="index.html">John Forbis, CPRP</a></h1>
         <div class="social-links mt-3 text-center">
-          <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
-          <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
-          <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
-          <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
-          <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+          <a href="https://twitter.com/JForb22" target="new" class="twitter"><i class="bx bxl-twitter"></i></a>
+          <a href="https://github.com/jforbis" target="new" class="github"><i class="bx bxl-github"></i></a>
+          <a href="https://www.instagram.com/jforb22/" target="new" class="instagram"><i class="bx bxl-instagram"></i></a>
+          <a href="https://www.linkedin.com/in/john-forbis-cprp-96921513/" target="new" class="linkedin"><i class="bx bxl-linkedin"></i></a>
         </div>
       </div>
 
@@ -76,10 +74,10 @@
       <div class="container">
 
         <div class="d-flex justify-content-between align-items-center">
-          <h2>Portfoio Details</h2>
+          <h2>Project Details</h2>
           <ol>
-            <li><a href="index.html">Home</a></li>
-            <li>Portfoio Details</li>
+            <li><a href="/">Home</a></li>
+            <li>Project Details</li>
           </ol>
         </div>
 
@@ -90,22 +88,22 @@
     <section id="portfolio-details" class="portfolio-details">
       <div class="container">
 
-        <div class="row gy-4">
+        <div class="row">
 
           <div class="col-lg-8">
             <div class="portfolio-details-slider swiper-container">
               <div class="swiper-wrapper align-items-center">
 
                 <div class="swiper-slide">
-                  <img src="assets/img/portfolio/portfolio-details-1.jpg" alt="">
+                  <img src="{{ url_for('static',filename='/img/portfolio/stock-predictor.jpg') }}" alt="">
                 </div>
 
                 <div class="swiper-slide">
-                  <img src="assets/img/portfolio/portfolio-details-2.jpg" alt="">
+                  <img src="{{ url_for('static',filename='/img/portfolio/stock-predictor2.jpg') }}" alt="">
                 </div>
 
                 <div class="swiper-slide">
-                  <img src="assets/img/portfolio/portfolio-details-3.jpg" alt="">
+                  <img src="{{ url_for('static',filename='/img/portfolio/stock-predictor3.jpg') }}" alt="">
                 </div>
 
               </div>
@@ -117,19 +115,29 @@
             <div class="portfolio-info">
               <h3>Project information</h3>
               <ul>
-                <li><strong>Category</strong>: Web design</li>
-                <li><strong>Client</strong>: ASU Company</li>
-                <li><strong>Project date</strong>: 01 March, 2020</li>
-                <li><strong>Project URL</strong>: <a href="#">www.example.com</a></li>
+                <li><strong>Category</strong>: Web App, Machine Learning, Plotly, Web Scraping</li>
+                <li><strong>Client</strong>: Personal Project</li>
+                <li><strong>Project date</strong>: April 20, 2021</li>
+                <li><strong>Project URL</strong>: <a href="https://make-that-bread.herokuapp.com/">make-that-bread.herokuapp.com</a></li>
               </ul>
             </div>
-            <div class="portfolio-description">
-              <h2>This is an example of portfolio detail</h2>
-              <p>
-                Autem ipsum nam porro corporis rerum. Quis eos dolorem eos itaque inventore commodi labore quia quia. Exercitationem repudiandae officiis neque suscipit non officia eaque itaque enim. Voluptatem officia accusantium nesciunt est omnis tempora consectetur dignissimos. Sequi nulla at esse enim cum deserunt eius.
-              </p>
-            </div>
           </div>
+          <div class="portfolio-description" style="float: top">
+            <h2>Project Info</h2>
+            <p>
+              With this project, we set out to build a web app that could serve two purposes:<br>
+              <ol>
+                <li>
+                  Allow the user to get a list of the top 25, most volatile, stocks for the current date and get some current data on that stock and accessible information about the company.
+                </li>
+                <li>
+                  Using our Machine learning model, predict a closing price of the chosen stock on a particular date that the user chooses.
+                </li>
+              </ol><br>
+              <b>Disclaimer:</b> current state of web app does not give accurate predictions as Heroku limits the memory of your app at the basic user level; due to this we had to lower the amount of Epochs to '1'. Our full model would include upwards of 500 Epochs; this model has a much higher prediction percentage but takes a little over of 3 hours to train.
+            </p>
+          </div>
+
 
         </div>
 
@@ -141,34 +149,36 @@
   <!-- ======= Footer ======= -->
   <footer id="footer">
     <div class="container">
-      <div class="copyright">
-        &copy; Copyright <strong><span>iPortfolio</span></strong>
-      </div>
       <div class="credits">
         <!-- All the links in the footer should remain intact. -->
         <!-- You can delete the links only if you purchased the pro version. -->
         <!-- Licensing information: https://bootstrapmade.com/license/ -->
         <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/ -->
-        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+        Designed by:<br>
+        <a target="new" href="https://www.linkedin.com/in/john-forbis-cprp-96921513/">J. Forbis</a> with help from <a href="https://bootstrapmade.com/">BootstrapMade</a>
       </div>
+      <div class="copyright">
+        &copy; Copyright <strong><span>iPortfolio</span></strong>
+      </div>
+
     </div>
   </footer><!-- End  Footer -->
 
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
   <!-- Vendor JS Files -->
-  <script src="assets/vendor/aos/aos.js"></script>
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
-  <script src="assets/vendor/purecounter/purecounter.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="assets/vendor/typed.js/typed.min.js"></script>
-  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="{{ url_for('static',filename='/vendor/aos/aos.js') }}"></script>
+  <script src="{{ url_for('static',filename='/vendor/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
+  <script src="{{ url_for('static',filename='/vendor/glightbox/js/glightbox.min.js') }}"></script>
+  <script src="{{ url_for('static',filename='/vendor/isotope-layout/isotope.pkgd.min.js') }}"></script>
+  <script src="{{ url_for('static',filename='/vendor/php-email-form/validate.js') }}"></script>
+  <script src="{{ url_for('static',filename='/vendor/purecounter/purecounter.js') }}"></script>
+  <script src="{{ url_for('static',filename='/vendor/swiper/swiper-bundle.min.js') }}"></script>
+  <script src="{{ url_for('static',filename='/vendor/typed.js/typed.min.js') }}"></script>
+  <script src="{{ url_for('static',filename='/vendor/waypoints/noframework.waypoints.js') }}"></script>
 
   <!-- Template Main JS File -->
-  <script src="assets/js/main.js"></script>
+  <script src="{{ url_for('static',filename='/js/main.js') }}"></script>
 
 </body>
 
