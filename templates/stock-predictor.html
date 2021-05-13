@@ -91,22 +91,24 @@
         <div class="row">
 
           <div class="col-lg-8">
-            <div class="portfolio-details-slider swiper-container">
+            <div class="portfolio-details-slider swiper-container mySwiper">
               <div class="swiper-wrapper align-items-center">
 
                 <div class="swiper-slide">
-                  <img src="{{ url_for('static',filename='/img/portfolio/stock-predictor.jpg') }}" alt="">
+                  <img class="slide-img" src="{{ url_for('static',filename='/img/portfolio/stock-predictor.jpg') }}" alt="">
                 </div>
 
                 <div class="swiper-slide">
-                  <img src="{{ url_for('static',filename='/img/portfolio/stock-predictor2.jpg') }}" alt="">
+                  <img class="slide-img" src="{{ url_for('static',filename='/img/portfolio/stock-predictor2.jpg') }}" alt="">
                 </div>
 
                 <div class="swiper-slide">
-                  <img src="{{ url_for('static',filename='/img/portfolio/stock-predictor3.jpg') }}" alt="">
+                  <img class="slide-img" src="{{ url_for('static',filename='/img/portfolio/stock-predictor3.jpg') }}" alt="">
                 </div>
 
               </div>
+              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div>
               <div class="swiper-pagination"></div>
             </div>
           </div>
@@ -117,17 +119,17 @@
               <ul>
                 <li><strong>Category</strong>: Web App, Machine Learning, Plotly, Web Scraping</li>
                 <li><strong>Client</strong>: Personal Project</li>
-                <ul>
-                  <li><strong>Contributors</strong>:<br>
+                <li><strong>Contributors</strong>:</li>
+                  <ul id="proj-team">
                   <li><a target=new href="https://www.linkedin.com/in/john-forbis-cprp-96921513/">J. Forbis</a></li>
                   <li><a target=new href="https://www.linkedin.com/in/stefano-imperiale/">S. Imperiale</a></li>
                   <li><a target=new href="https://www.linkedin.com/in/john-stoddart-25532b191/">J. Stoddart</a></li>
                   <li><a target=new href="https://www.linkedin.com/in/tstowell/">T. Stowell</a></li>
                   <li><a target=new href="https://www.linkedin.com/in/stevensweeny/">S. Sweeny</a></li>
-                  </li>
-                </ul>
+                  </ul><br>
                 <li><strong>Project date</strong>: April 20, 2021</li>
-                <li><strong>Project URL</strong>: <a href="https://make-that-bread.herokuapp.com/">make-that-bread.herokuapp.com</a></li>
+                <li><strong>Project URL</strong>: <a target="new" href="https://make-that-bread.herokuapp.com/">make-that-bread.herokuapp.com</a></li>
+                <li><strong>Project GitHub</strong>: <a target="new" href="https://github.com/jforbis/make-that-bread">Check in out here!</a></li>
               </ul>
             </div>
           </div>
@@ -188,6 +190,16 @@
 
   <!-- Template Main JS File -->
   <script src="{{ url_for('static',filename='/js/main.js') }}"></script>
+
+  <!-- Swiper Initialization -->
+  <script>
+    let swiper = new Swiper(".mySwiper", {
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+  </script>
 
 </body>
 

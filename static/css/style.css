@@ -705,6 +705,27 @@ section {
   padding: 0;
 }
 
+#proj-team {
+  list-style-type: circle;
+  margin-left: 40px; 
+}
+
+.slide-img {
+  max-width: 625px;
+  display: block;
+  object-fit: cover;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.swiper-button-next {
+  color: #149ddd;
+}
+
+.swiper-button-prev {
+  color: #149ddd;
+}
+
 /* .swiper-wrapper {
   padding-bottom: 20px;
 } */
