@@ -11,9 +11,9 @@ def proj():
     return render_template("stock-predictor.html")
 
 
-# @app.route("/projects", methods=['GET'])
-# def proj():
-#     return render_template("under_construction.html")
+@app.route("/leaflet", methods=['GET'])
+def leaf():
+    return render_template("leaflet.html")
 
 if __name__ == "__main__":
     app.run(debug=True)
