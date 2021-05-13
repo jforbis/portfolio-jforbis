@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Stock Price Predictor</title>
+  <title>SCC Tumor Development</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -74,7 +74,7 @@
       <div class="container">
 
         <div class="d-flex justify-content-between align-items-center">
-          <h2>Project Details</h2>
+          <h2>SCC Tumor Development Over Time</h2>
           <ol>
             <li><a href="/">Home</a></li>
             <li>Project Details</li>
@@ -95,16 +95,25 @@
               <div class="swiper-wrapper align-items-center">
 
                 <div class="swiper-slide">
-                  <img class="slide-img" src="{{ url_for('static',filename='/img/portfolio/stock-predictor.jpg') }}" alt="">
+                  <img class="slide-img" src="{{ url_for('static',filename='/img/portfolio/matplotlib.jpg') }}" alt="">
                 </div>
 
                 <div class="swiper-slide">
-                  <img class="slide-img" src="{{ url_for('static',filename='/img/portfolio/stock-predictor2.jpg') }}" alt="">
+                  <img class="slide-img" src="{{ url_for('static',filename='/img/portfolio/matplotlib2.jpg') }}" alt="">
                 </div>
 
                 <div class="swiper-slide">
-                  <img class="slide-img" src="{{ url_for('static',filename='/img/portfolio/stock-predictor3.jpg') }}" alt="">
+                  <img class="slide-img" src="{{ url_for('static',filename='/img/portfolio/matplotlib3.jpg') }}" alt="">
                 </div>
+
+                <div class="swiper-slide">
+                  <img class="slide-img" src="{{ url_for('static',filename='/img/portfolio/matplotlib4.jpg') }}" alt="">
+                </div>
+
+                <div class="swiper-slide">
+                  <img class="slide-img" src="{{ url_for('static',filename='/img/portfolio/matplotlib5.jpg') }}" alt="">
+                </div>
+
 
               </div>
               <div class="swiper-button-next"></div>
@@ -117,35 +126,41 @@
             <div class="portfolio-info">
               <h3>Project information</h3>
               <ul>
-                <li><strong>Category</strong>: Web App, Machine Learning, Plotly, Web Scraping</li>
+                <li><strong>Category</strong>: Python, Pandas, Jupyter Notebook, Matplotlib, Linear Regression</li>
                 <li><strong>Client</strong>: Personal Project</li>
                 <li><strong>Contributors</strong>:</li>
                   <ul id="proj-team">
                   <li><a target=new href="https://www.linkedin.com/in/john-forbis-cprp-96921513/">J. Forbis</a></li>
-                  <li><a target=new href="https://www.linkedin.com/in/stefano-imperiale/">S. Imperiale</a></li>
-                  <li><a target=new href="https://www.linkedin.com/in/john-stoddart-25532b191/">J. Stoddart</a></li>
-                  <li><a target=new href="https://www.linkedin.com/in/tstowell/">T. Stowell</a></li>
-                  <li><a target=new href="https://www.linkedin.com/in/stevensweeny/">S. Sweeny</a></li>
                   </ul><br>
-                <li><strong>Project date</strong>: April 20, 2021</li>
-                <li><strong>Project URL</strong>: <a target="new" href="https://make-that-bread.herokuapp.com/">make-that-bread.herokuapp.com</a></li>
-                <li><strong>Project GitHub</strong>: <a target="new" href="https://github.com/jforbis/make-that-bread">Check in out here!</a></li>
+                <li><strong>Project date</strong>: December 3, 2020</li>
+                <li><strong>Project GitHub</strong>: <a target="new" href="https://github.com/jforbis/matplotlib-pymaceuticals">Check in out here!</a></li>
               </ul>
             </div>
           </div>
           <div class="portfolio-description">
             <h2>Project Info</h2>
+            <h4>SCC Tumor Development Over Time via Multiple Drug Regimen (in mice)</h4>
             <p>
-              With this project, we set out to build a web app that could serve two purposes:<br>
-              <ol>
+              In this study we took 249 mice and monitored squamous cell carcinoma (SCC) tumor growth. Measurements were taken every 5 days for all mice, unless measurement was unable to be taken due to unforeseen factors. Additionally, the gender of mice was roughly equal throughout the study.<br>
+              <h4>Observations:</h4><ul>
                 <li>
-                  Allow the user to get a list of the top 25, most volatile, stocks for the current date and get some current data on that stock and accessible information about the company.
+                  Of the original 248 mice, only 130 of them lasted the entire length of the study.
                 </li>
                 <li>
-                  Using our Machine learning model, predict a closing price of the chosen stock on a particular date that the user chooses.
+                  Regarding the four drug regimens that were honed in on (Capomulin, Ramicane, Infubinol, & Ceftamin) it is apparent that both Capomulin and Ramicane had more of an effect on tumor volume than Infubinol and Ceftamin.
                 </li>
-              </ol><br>
-              <b>Disclaimer:</b> current state of web app does not give accurate predictions as Heroku limits the memory of your app at the basic user level; due to this we had to lower the amount of Epochs to '1'. Our full model would include upwards of 500 Epochs; this model has a much higher prediction percentage but takes a little over of 3 hours to train.
+                  <ul>
+                    <li>
+                      Further, Ramicane seemed to edge out Capomulin in terms of most positive effect on tumor volume, reducing tumor size down to a mean of 36.56 mm3.
+                    </li>
+                  </ul>
+                <li>
+                  Of the four regimens listed above, there appears to only be one outlier from the innerquartile range (IQR). That outlier was with the drug regimen Infubinol.
+                </li>
+                <li>
+                  Finally, the correlation between mouse weight and tumor size was .88; meaning, it is likely that as mouse weight changes, so will tumor size.
+                </li>
+              </ul>
             </p>
           </div>
 

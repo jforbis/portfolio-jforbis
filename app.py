@@ -15,5 +15,9 @@ def proj():
 def leaf():
     return render_template("leaflet.html")
 
+@app.route("/mpl", methods=['GET'])
+def mat():
+    return render_template("matplotlib.html")
+
 if __name__ == "__main__":
     app.run(debug=True)

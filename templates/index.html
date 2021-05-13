@@ -344,52 +344,64 @@
 
         <div class="section-title">
           <h2>Portfolio</h2>
-          <p>
-            For access to my recent projects please visit my GitHub page and check out my repositories!  <a target="new" href="https://github.com/jforbis"><img id="port-gh" src="{{ url_for('static',filename='img/jfimgs/github.svg') }}"></a>
-          </p>
         </div>
 
-        <img id="comingsoon" src="{{ url_for('static',filename='img/jfimgs/comingsoon.png') }}">
+        <!-- <img id="comingsoon" src="{{ url_for('static',filename='img/jfimgs/comingsoon.png') }}"> -->
 
         <div class="row" data-aos="fade-left">
           <div class="col-lg-12 d-flex justify-content-center">
             <ul id="portfolio-flters">
               <li data-filter="*" class="filter-active">All</li>
-              <li data-filter=".filter-app">Web App w/ Machine Learning</li>
-              <li data-filter=".filter-card">Leaflet.js</li>
-              <li data-filter=".filter-web">Matplotlib</li>
+              <li data-filter=".filter-stock">Web App w/ Machine Learning</li>
+              <li data-filter=".filter-leaf">Leaflet.js</li>
+              <li data-filter=".filter-mat">Matplotlib</li>
             </ul>
           </div>
         </div>
 
         <div class="row portfolio-container" data-aos="fade-left" data-aos-delay="100">
 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+          <div class="col-lg-4 col-md-6 portfolio-item filter-stock">
             <div class="portfolio-wrap">
               <img src="{{ url_for('static',filename='/img/portfolio/stock-predictor.jpg') }}" class="portfolio-img" alt="">
               <div class="portfolio-links">
-                <a href="{{ url_for('static',filename='/img/portfolio/stock-predictor.jpg') }}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 1"><i class="bx bx-plus"></i></a>
+                <a href="{{ url_for('static',filename='/img/portfolio/stock-predictor.jpg') }}" data-gallery="portfolioGallery" class="portfolio-lightbox" data-glightbox="description: .stock-desc"><i class="bx bx-plus"></i></a>
+                  <div class="glightbox-desc stock-desc">
+                    <h4>
+                      Click here for more details:<a href="/make-that-bread"> Stock Price Predictor</a>
+                    </h4>
+                  </div>      
                 <a href="/make-that-bread" title="More Details"><i class="bx bx-link"></i></a>
               </div>
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+          <div class="col-lg-4 col-md-6 portfolio-item filter-leaf">
             <div class="portfolio-wrap">
               <img src="{{ url_for('static',filename='/img/portfolio/leaflet.jpg') }}" class="portfolio-img" alt="">
               <div class="portfolio-links">
-                <a href="assets/img/portfolio/portfolio-2.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 2"><i class="bx bx-plus"></i></a>
+                <a href="{{ url_for('static',filename='/img/portfolio/leaflet.jpg') }}" data-gallery="portfolioGallery" class="portfolio-lightbox" data-glightbox="description: .earthquake-desc"><i class="bx bx-plus"></i></a>
+                  <div class="glightbox-desc earthquake-desc">
+                    <h4>
+                      Click here for more details:<a href="/leaflet"> Earthquake Mapping</a>
+                    </h4>
+                  </div>      
                 <a href="/leaflet" title="More Details"><i class="bx bx-link"></i></a>
               </div>
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+          <div class="col-lg-4 col-md-6 portfolio-item filter-mat">
             <div class="portfolio-wrap">
               <img src="{{ url_for('static',filename='/img/portfolio/matplotlib.jpg') }}" class="portfolio-img" alt="">
               <div class="portfolio-links">
-                <a href="assets/img/portfolio/portfolio-3.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 3"><i class="bx bx-plus"></i></a>
-                <a href="/projects" title="More Details"><i class="bx bx-link"></i></a>
+                <a href="{{ url_for('static',filename='/img/portfolio/matplotlib.jpg') }}" data-gallery="portfolioGallery" class="portfolio-lightbox" data-glightbox="description: .scc-desc"><i class="bx bx-plus"></i></a>
+                  <div class="glightbox-desc scc-desc">
+                    <h4>
+                      Click here for more details:<a href="/mpl"> SCC Tumor Development Over Time</a>
+                    </h4>
+                  </div>      
+                <a href="/mpl" title="More Details"><i class="bx bx-link"></i></a>
               </div>
             </div>
           </div>
@@ -455,6 +467,10 @@
           </div> -->
 
         </div>
+        
+        <p>
+          For access to more of my projects please visit my GitHub page and check out my repositories!  <a target="new" href="https://github.com/jforbis"><img id="port-gh" src="{{ url_for('static',filename='img/jfimgs/github.svg') }}"></a>
+        </p>
 
       </div>
     </section><!-- End Portfolio Section -->
