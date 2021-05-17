@@ -798,7 +798,14 @@ section {
 }
 
 #serv-vid {
+  display: flex;
+  height: 300px;
+  margin-left: auto;
+  margin-right: auto;
   margin-top: 20px;
+  border-radius: 25px;
+  border: 5px solid #149ddd;
+  width: 70%;
 }
 
 /*--------------------------------------------------------------
