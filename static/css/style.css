@@ -469,6 +469,10 @@ section {
   color: #050d18;
 }
 
+.resume-title i {
+  font-size: 15px;
+}
+
 .resume .resume-item {
   padding: 0 0 20px 20px;
   margin-top: -2px;
